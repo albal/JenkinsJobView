@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jobs</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+<div class="headerbox">
+    <h1>Environment Status for {{ view }}...</h1>
+</div>
+<div class="grid-container">
+    {% for job in status %}
+    <div class="grid-item {{ job.color }}"><H2>{{ job.job }}</H2>
+        <div class="build">{{ job.lastbuild }}</div>
+            <button class="button">Annotate</button>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>

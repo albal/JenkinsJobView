@@ -1,0 +1,52 @@
+body {
+  background-color: rgba(239, 239, 239, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.headerbox {
+  background-color: rgba(0, 0, 255, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height: 64px;
+  vertical-align: middle;
+}
+
+/* Style buttons */
+.button {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  right: 0;
+  bottom: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 16px 16px;
+  grid-template-columns: auto auto auto;
+  padding: 8px;
+}
+
+.grid-item {
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  padding: 16px;
+  height: 200px;
+  font-size: 16px;
+  text-align: center;
+  -webkit-box-shadow: 4px 4px 4px 2px rgba(127,127,127,0.5);
+  -moz-box-shadow: 4px 4px 4px 2px rgba(127,127,127,0.5);
+   box-shadow: 4px 4px 4px 2px rgba(127,127,127,0.5);
+   border-radius: 8px;
+}
+
+.disabled { background-color: rgba(127, 127, 127, 0.8); }
+.blue { background-color: rgba(0, 255, 0, 0.8); }
+.red { background-color: rgba(255, 0, 0, 0.8); }
+.notbuilt { background-color: rgba(0, 255, 255, 0.8); }
